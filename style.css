@@ -25,7 +25,7 @@ body {
   animation: spin 5s linear infinite;
   width: 10vw;
   height: 10vw;
-  transform: rotate(120deg);
+  transform: rotate(130deg);
   background-color: red;
   border: 3px solid black;
 }
@@ -72,7 +72,7 @@ body {
   border: 3px solid black;
   position: fixed;
   top: 38vh;
-  right: 38vw;
+  right: 32vw;
   transition: 2s;
 }
 
@@ -98,7 +98,7 @@ body {
   font-style: bold;
   font-size: 46px;
   position: fixed;
-  top: 6vh;
+  top: 4vh;
   right: 6vw;
 }
 
@@ -252,7 +252,6 @@ body {
 
   .letters {
     font-size: 40px;
-    position: fixed;
     top: 4vh;
     right: 8vw;
   }
@@ -317,7 +316,7 @@ body {
 
   .letters {
     font-size: 26px;
-    top: 60vh;
-    left: 34vw;
+    top: 2vh;
+    left: 14vw;
   }
 }
