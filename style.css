@@ -13,13 +13,7 @@ body {
 }
 
 .wrap {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-}
-
-.squares, .symbols, .lastFigure {
-  flex-basis: 30%;
+  width: 100%;
 }
 
 .firstSquare, .secondSquare {
@@ -42,30 +36,31 @@ body {
   left: 20vh;
 }
 
-.firstLine {
+.firstLine, .secondLine {
   width: 12vw;
   height: 3vh;
+}
+
+.firstLine {
   position: fixed;
   top: 40vh;
   right: 50vw;
-  background-color: darkblue;
+  background-color: blue;
   border: 3px solid black;
 }
 
 .secondLine {
-  width: 12vw;
-  height: 3vh;
   position: fixed;
   top: 50vh;
   right: 50vw;
-  background-color: darkblue;
+  background-color: blue;
   border: 3px solid black;
 }
 
 .circle {
   width: 120px;
   height: 120px;
-  background-color: lightblue;
+  background-color: teal;
   border-radius: 50%;
   border: 3px solid black;
   position: fixed;
@@ -91,4 +86,122 @@ body {
   position: fixed;
   top: 26vh;
   right: 10vw;
+}
+
+@media(min-width: 583px) and (max-width: 900px) {
+  .firstSquare, .secondSquare {
+    width: 17vw;
+    height: 17vw;
+  }
+
+  .firstSquare {
+    top: 41vh;
+    left: 4vw;
+  }
+
+  .secondSquare {
+    top: 15vh;
+    left: 20vh;
+  }
+
+  .firstLine, .secondLine {
+    width: 18vw;
+    height: 2vh;
+  }
+
+  .firstLine {
+    top: 76vh;
+    left: 5vw;
+  }
+
+  .secondLine {
+    top: 84vh;
+    left: 5vw;
+  }
+
+  .circle {
+    width: 15vw;
+    height: 15vh;
+    top: 73vh;
+    left: 30vw;
+  }
+
+  .rectangle {
+    width: 30vw;
+    height: 74vh;
+    background-color: #CC6666;
+    top: 20vh;
+    right: 3vw;
+  }
+
+  .letters {
+    font-size: 40px;
+    position: fixed;
+    top: 26vh;
+    right: 12vw;
+  }
+}
+
+@media (max-width: 582px) {
+  .nav {
+    height: 4vh;
+    border: 3px solid black;
+  }
+
+  .firstSquare, .secondSquare {
+    transform: rotate(135deg);
+    width: 12vw;
+    height: 12vw;
+    border: 2px solid black;
+  }
+
+  .firstSquare {
+    top: 22vh;
+    left: 22vw;
+  }
+
+  .secondSquare {
+    top: 8vh;
+    left: 36vw;
+  }
+
+  .firstLine, .secondLine {
+    width: 26vw;
+    height: 2vh;
+  }
+
+  .firstLine {
+    top: 40vh;
+    left: 18vw;
+    border: 2px solid black;
+  }
+
+  .secondLine {
+    top: 46vh;
+    left: 18vw;
+    border: 2px solid black;
+  }
+
+  .circle {
+    width: 16vw;
+    height: 16vw;
+    border: 2px solid black;
+    top: 36vh;
+    left: 50vw;
+  }
+
+  .rectangle {
+    width: 36vw;
+    height: 42vh;
+    background-color: blue;
+    border: 2px solid black;
+    top: 56vh;
+    left: 20vw;
+  }
+
+  .letters {
+    font-size: 26px;
+    top: 60vh;
+    left: 34vw;
+  }
 }
