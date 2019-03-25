@@ -10,6 +10,11 @@ body {
   height: 10vh;
   background-color: olive;
   border: 5px solid black;
+  transition: 2s;
+}
+
+.nav:hover {
+  background-color: black;
 }
 
 .wrap {
@@ -17,6 +22,7 @@ body {
 }
 
 .firstSquare, .secondSquare {
+  animation: spin 5s linear infinite;
   width: 10vw;
   height: 10vw;
   transform: rotate(120deg);
@@ -39,6 +45,7 @@ body {
 .firstLine, .secondLine {
   width: 12vw;
   height: 3vh;
+  animation: colors 5s linear infinite;
 }
 
 .firstLine {
@@ -66,9 +73,16 @@ body {
   position: fixed;
   top: 38vh;
   right: 38vw;
+  transition: 2s;
+}
+
+.circle:hover {
+  border: 3px dashed red;
+  background-color: white;
 }
 
 .rectangle {
+  animation: shake 5s linear infinite;
   width: 20vw;
   height: 74vh;
   background-color: white;
@@ -84,8 +98,110 @@ body {
   font-style: bold;
   font-size: 46px;
   position: fixed;
-  top: 26vh;
-  right: 10vw;
+  top: 6vh;
+  right: 6vw;
+}
+
+@keyframes shake {
+  0% {
+    transform: translateX(0)
+  }
+
+  90% {
+    transform: translateX(0)
+  }
+
+  91% {
+    transform: translateX(30px)
+  }
+
+  92% {
+    transform: translateX(-30px)
+  }
+
+  93% {
+    transform: translateX(30px)
+  }
+
+  94% {
+    transform: translateX(-30px)
+  }
+
+  95% {
+    transform: translateX(30px)
+  }
+
+  96% {
+    transform: translateX(-30px)
+  }
+
+  97% {
+    transform: translateX(30px)
+  }
+
+  98% {
+    transform: translateX(-30px)
+  }
+
+  99% {
+    transform: translateX(30px)
+  }
+
+  100% {
+    transform: translateX(0)
+  }
+}
+
+@keyframes spin {
+  0% {
+    transform: rotate(130deg)
+  }
+
+  20% {
+    transform: rotate(110deg)
+  }
+
+  40% {
+    transform: rotate(90deg)
+  }
+
+  60% {
+    transform: rotate(70deg)
+  }
+
+  80% {
+    transform: rotate(100deg)
+  }
+
+  100% {
+    transform: rotate(130deg)
+  }
+}
+
+@keyframes colors {
+  0% {
+    background-color: blue
+  }
+
+  20% {
+    background-color: darkblue
+  }
+
+  40% {
+    background-color: indigo
+  }
+
+  60% {
+    background-color: violet
+  }
+
+  80% {
+    background-color: darkblue;
+  }
+
+  100% {
+    background-color: blue
+  }
 }
 
 @media(min-width: 583px) and (max-width: 900px) {
@@ -137,8 +253,8 @@ body {
   .letters {
     font-size: 40px;
     position: fixed;
-    top: 26vh;
-    right: 12vw;
+    top: 4vh;
+    right: 8vw;
   }
 }
 
